@@ -1,0 +1,24 @@
+name: '发布Draft'
+on:
+  push:
+    tags:
+      - 'v*'    
+jobs:
+  draft-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare 
+        run: |
+          sudo apt install -y fastjar
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Build Package
+        run: |          
+          make USE_MIRROR=no V=${{ github.ref_name }}
+      - name: Draft Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "Release ${{ github.ref_name }}"
+          body: '变更记录:'
+          files: 'output/Eclipse_for_S_Link_${{ github.ref_name }}.zip'
+          draft: true
