@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+toolchain.name=xPack GNU RISC-V Embedded GCC
+toolchain.path.2021824384=${eclipse_home}\\toolchain\\gcc\\bin

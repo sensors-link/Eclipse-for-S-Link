@@ -1,0 +1,725 @@
+#! /bin/bash
+#! 假的bash文件，不要用bash执行
+# # for keep
+# - for shrink
+
+# configuration/config.ini
+# configuration/org.eclipse.equinox.simpleconfigurator
+# configuration/org.eclipse.update
+
+features/org.eclipse.cdt.autotools_10.7.0.202205060838
+# features/org.eclipse.cdt.build.crossgcc_10.7.0.202204200013
+features/org.eclipse.cdt.cmake_10.7.0.202206081803
+# features/org.eclipse.cdt.debug.gdbjtag_10.7.0.202204241640
+# features/org.eclipse.cdt.debug.standalone_10.7.0.202204200013
+# features/org.eclipse.cdt.debug.ui.memory_10.7.0.202204200013
+features/org.eclipse.cdt.docker.launcher_10.7.0.202205210108
+# features/org.eclipse.cdt.gdb_10.7.0.202204200013
+# features/org.eclipse.cdt.gnu.build_10.7.0.202205051013
+# features/org.eclipse.cdt.gnu.debug_10.7.0.202204200013
+# features/org.eclipse.cdt.gnu.dsf_10.7.0.202205110149
+features/org.eclipse.cdt.launch.remote_10.7.0.202205060838
+# features/org.eclipse.cdt.launch.serial.feature_10.7.0.202204200013
+features/org.eclipse.cdt.meson_10.7.0.202204200013
+# features/org.eclipse.cdt.native_10.7.0.202206081808
+# features/org.eclipse.cdt.platform_10.7.0.202206081808
+features/org.eclipse.cdt.testsrunner.feature_10.7.0.202204200013
+# features/org.eclipse.cdt_10.7.0.202206081808
+# features/org.eclipse.e4.rcp_4.24.0.v20220530-1036
+# features/org.eclipse.ecf.core.feature_1.6.1.v20211005-1944
+# features/org.eclipse.ecf.core.ssl.feature_1.1.501.v20210409-2301
+# features/org.eclipse.ecf.filetransfer.feature_3.14.1800.v20220215-0126
+# features/org.eclipse.ecf.filetransfer.httpclient5.feature_1.1.600.v20220215-0126
+# features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.401.v20210409-2301
+# features/org.eclipse.egit_6.2.0.202206071550-r
+# features/org.eclipse.embedcdt.codered_6.2.1.202204041943
+features/org.eclipse.embedcdt.debug.gdbjtag.jlink_6.2.1.202204041943
+# features/org.eclipse.embedcdt.debug.gdbjtag.openocd_6.2.1.202204041943
+features/org.eclipse.embedcdt.debug.gdbjtag.pyocd_6.2.1.202204041943
+features/org.eclipse.embedcdt.debug.gdbjtag.qemu_6.2.1.202204041943
+# features/org.eclipse.embedcdt.debug.gdbjtag_6.2.1.202204041943
+features/org.eclipse.embedcdt.doc.user_6.2.1.202204041943
+# features/org.eclipse.embedcdt.managedbuild.cross.arm_6.2.1.202204041943
+# features/org.eclipse.embedcdt.managedbuild.cross.riscv_6.2.1.202204041943
+# features/org.eclipse.embedcdt.packs_6.2.1.202204041943
+features/org.eclipse.embedcdt.templates.ad_6.2.1.202204041943
+features/org.eclipse.embedcdt.templates.cortexm_6.2.1.202204041943
+features/org.eclipse.embedcdt.templates.freescale_6.2.1.202204041943
+# features/org.eclipse.embedcdt.templates.sifive_6.2.1.202204041943
+features/org.eclipse.embedcdt.templates.stm_6.2.1.202204041943
+# features/org.eclipse.embedcdt_6.2.1.202204041943
+# features/org.eclipse.emf.common_2.26.0.v20220325-0806
+# features/org.eclipse.emf.ecore_2.28.0.v20220426-0617
+# features/org.eclipse.epp.mpc_1.10.0.v20220502-0731
+# features/org.eclipse.epp.package.common.feature_4.24.0.20220609-1200
+# features/org.eclipse.epp.package.embedcpp.feature_4.24.0.20220609-1200
+# features/org.eclipse.equinox.p2.core.feature_1.6.1400.v20220518-1326
+# features/org.eclipse.equinox.p2.discovery.feature_1.2.1100.v20220210-1157
+# features/org.eclipse.equinox.p2.extras.feature_1.4.1600.v20220518-1326
+# features/org.eclipse.equinox.p2.rcp.feature_1.4.1600.v20220518-1326
+# features/org.eclipse.equinox.p2.user.ui_2.4.1600.v20220518-1326
+features/org.eclipse.help_2.3.1000.v20220607-0700
+# features/org.eclipse.jgit.gpg.bc_6.2.0.202206071550-r
+# features/org.eclipse.jgit.http.apache_6.2.0.202206071550-r
+# features/org.eclipse.jgit.ssh.apache_6.2.0.202206071550-r
+# features/org.eclipse.jgit_6.2.0.202206071550-r
+# features/org.eclipse.justj.openjdk.hotspot.jre.full_17.0.3.v20220515-1416
+features/org.eclipse.launchbar.remote_10.7.0.202204200013
+features/org.eclipse.launchbar_10.7.0.202204200013
+features/org.eclipse.linuxtools.cdt.libhover.devhelp.feature_8.7.0.202206072042
+features/org.eclipse.linuxtools.cdt.libhover.feature_8.7.0.202206072042
+features/org.eclipse.linuxtools.changelog.c_8.7.0.202206072042
+features/org.eclipse.linuxtools.docker.editor.ls.feature_5.7.0.202206072042
+features/org.eclipse.linuxtools.docker.feature_5.7.0.202206072042
+features/org.eclipse.linuxtools.gcov_8.7.0.202206072042
+features/org.eclipse.linuxtools.gprof.feature_8.7.0.202206072042
+features/org.eclipse.linuxtools.profiling_8.7.0.202206072042
+features/org.eclipse.linuxtools.rpm_8.7.0.202206072042
+features/org.eclipse.linuxtools.valgrind_8.7.0.202206072042
+features/org.eclipse.mylyn.wikitext.editors_feature_3.0.42.202201072301
+features/org.eclipse.mylyn.wikitext_feature_3.0.42.202201072301
+features/org.eclipse.oomph.p2_1.23.0.v20220525-1027
+features/org.eclipse.oomph.setup.core_1.24.0.v20220607-1104
+features/org.eclipse.oomph.setup_1.25.0.v20220607-1104
+# features/org.eclipse.platform_4.24.0.v20220607-0700
+# features/org.eclipse.rcp_4.24.0.v20220607-0700
+features/org.eclipse.remote_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.connector.cdtserial.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.connector.local.feature_10.7.0.202204200013
+features/org.eclipse.tm.terminal.connector.ssh.feature_10.7.0.202204200013
+features/org.eclipse.tm.terminal.connector.telnet.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.control.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.feature_10.7.0.202204110055
+# features/org.eclipse.tm.terminal.view.feature_10.7.0.202204200013
+# features/org.eclipse.tracecompass.ctf_8.0.0.202206082347
+# features/org.eclipse.tracecompass.gdbtrace_8.0.0.202206082347
+# features/org.eclipse.tracecompass.lttng2.control_8.0.0.202206082347
+# features/org.eclipse.tracecompass.lttng2.kernel_8.0.0.202206082347
+# features/org.eclipse.tracecompass.lttng2.ust_8.0.0.202206082347
+# features/org.eclipse.tracecompass.tmf.ctf_8.0.0.202206082347
+# features/org.eclipse.tracecompass.tmf_8.0.0.202206082347
+features/org.eclipse.userstorage_1.2.0.v20210517-0327
+
+# p2/org.eclipse.equinox.p2.core
+# p2/org.eclipse.equinox.p2.engine
+# p2/org.eclipse.equinox.p2.repository
+
+# plugins/com.fasterxml.jackson.core.jackson-annotations_2.13.2.v20220426-1653.jar
+# plugins/com.fasterxml.jackson.core.jackson-core_2.13.2.v20220426-1653.jar
+# plugins/com.fasterxml.jackson.core.jackson-databind_2.13.2.v20220426-1653.jar
+# plugins/com.github.jnr.constants_0.9.15.v20200501-1917.jar
+# plugins/com.github.jnr.enxio_0.25.0.v20200501-1917.jar
+# plugins/com.github.jnr.ffi_2.1.12.v20200513-1859.jar
+# plugins/com.github.jnr.jffi.native_1.2.23.v20211029-0121.jar
+# plugins/com.github.jnr.jffi_1.2.23.v20211029-0121.jar
+# plugins/com.github.jnr.posix_3.0.54.v20200501-1917.jar
+# plugins/com.github.jnr.unixsocket_0.28.0.v20200501-1917.jar
+# plugins/com.github.jnr.x86asm_1.0.2.v20200501-1917.jar
+# plugins/com.google.auth.google-auth-library-credentials_0.20.0.v20200515-2048.jar
+# plugins/com.google.auth.oauth2-http_0.20.0.v20200604-1524.jar
+# plugins/com.google.auto.value.auto-value-annotations_1.7.0.v20200515-2048.jar
+# plugins/com.google.gson_2.8.9.v20220111-1409.jar
+# plugins/com.google.guava_30.1.0.v20210127-2300.jar
+# plugins/com.google.http-client.google-http-client-jackson2_1.34.2.v20200515-2048.jar
+# plugins/com.google.http-client.google-http-client_1.34.2.v20200515-2048.jar
+# plugins/com.google.j2objc.j2objc-annotations_1.3.0.v20200515-2048.jar
+# plugins/com.ibm.icu_67.1.0.v20200706-1749.jar
+# plugins/com.jcraft.jsch_0.1.55.v20190404-1902.jar
+# plugins/com.sun.el_2.2.0.v201303151357.jar
+# plugins/com.sun.jna.platform_5.8.0.v20210406-1004.jar
+# plugins/com.sun.jna_5.8.0.v20210503-0343.jar
+# plugins/com.sun.xml.bind_2.3.3.v20201118-1818.jar
+# plugins/io.grpc.grpc-context_1.29.0.v20200515-2048.jar
+# plugins/io.opencensus.opencensus-api_0.26.0.v20200515-2048.jar
+# plugins/io.opencensus.opencensus-contrib-http-util_0.26.0.v20200515-2048.jar
+# plugins/jakarta.servlet-api_4.0.0.jar
+# plugins/jakarta.xml.bind_2.3.3.v20201118-1818.jar
+# plugins/javaewah_1.1.13.v20211029-0839.jar
+# plugins/javassist_3.13.0.GA_v201209210905.jar
+# plugins/javax.activation_1.2.2.v20201119-1642.jar
+# plugins/javax.annotation_1.3.5.v20200909-1856.jar
+# plugins/javax.el_2.2.0.v201303151357.jar
+# plugins/javax.inject_1.0.0.v20220405-0441.jar
+# plugins/javax.servlet.jsp_2.2.0.v201112011158.jar
+# plugins/javax.ws.rs_2.1.6.v20200505-2127.jar
+# plugins/javax.xml_1.3.4.v201005080400.jar
+# plugins/net.i2p.crypto.eddsa_0.3.0.v20220506-1020.jar
+# plugins/org.antlr.runtime_3.2.0.v20220404-1927.jar
+# plugins/org.aopalliance_1.0.0.v20220404-1927.jar
+# plugins/org.apache.ant_1.10.12.v20211102-1452
+# plugins/org.apache.batik.constants_1.14.0.v20210324-0332.jar
+# plugins/org.apache.batik.css_1.14.0.v20210324-0332.jar
+# plugins/org.apache.batik.i18n_1.14.0.v20210324-0332.jar
+# plugins/org.apache.batik.util_1.14.0.v20210324-0332.jar
+# plugins/org.apache.commons.codec_1.14.0.v20200818-1422.jar
+# plugins/org.apache.commons.compress_1.21.0.v20211103-2100.jar
+# plugins/org.apache.commons.io_2.8.0.v20210415-0900.jar
+# plugins/org.apache.commons.jxpath_1.3.0.v200911051830.jar
+# plugins/org.apache.commons.lang3_3.1.0.v201403281430.jar
+# plugins/org.apache.commons.lang_2.6.0.v20220406-2305.jar
+# plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar
+# plugins/org.apache.felix.gogo.command_1.1.2.v20210111-1007.jar
+# plugins/org.apache.felix.gogo.runtime_1.1.4.v20210111-1007.jar
+# plugins/org.apache.felix.gogo.shell_1.1.4.v20210111-1007.jar
+# plugins/org.apache.felix.scr_2.1.24.v20200924-1939.jar
+# plugins/org.apache.httpcomponents.client5.httpclient5-win_5.1.2.v20211217-1500.jar
+# plugins/org.apache.httpcomponents.client5.httpclient5_5.1.2.v20211217-1500.jar
+# plugins/org.apache.httpcomponents.core5.httpcore5-h2_5.1.2.v20211217-1500.jar
+# plugins/org.apache.httpcomponents.core5.httpcore5_5.1.2.v20211217-1500.jar
+# plugins/org.apache.httpcomponents.httpclient_4.5.13.v20210128-2225.jar
+# plugins/org.apache.httpcomponents.httpcore_4.4.15.v20220209-2345.jar
+# plugins/org.apache.jasper.glassfish_2.2.2.v201501141630.jar
+# plugins/org.apache.lucene.analyzers-common_8.4.1.v20200122-1459.jar
+# plugins/org.apache.lucene.analyzers-smartcn_8.4.1.v20200122-1459.jar
+# plugins/org.apache.lucene.core_8.4.1.v20200122-1459.jar
+# plugins/org.apache.sshd.osgi_2.8.0.v20211227-1750.jar
+# plugins/org.apache.sshd.sftp_2.8.0.v20211227-1750.jar
+# plugins/org.apache.xerces_2.12.2.v20220131-0835.jar
+# plugins/org.apache.xml.resolver_1.2.0.v20220401-1849.jar
+# plugins/org.apache.xmlgraphics_2.6.0.v20210409-0748.jar
+# plugins/org.bouncycastle.bcpg_1.70.0.v20220507-1208.jar
+# plugins/org.bouncycastle.bcpkix_1.70.0.v20220105-1522.jar
+# plugins/org.bouncycastle.bcprov_1.70.0.v20220507-1208.jar
+# plugins/org.bouncycastle.bcutil_1.70.0.v20220105-1522.jar
+# plugins/org.cyberneko.html_1.9.14.v201105210654.jar
+# plugins/org.eclipse.ant.core_3.6.400.v20220317-1003.jar
+plugins/org.eclipse.cdt.autotools.core_2.1.300.202204251934.jar
+plugins/org.eclipse.cdt.autotools.docs_2.0.1200.202204131742.jar
+plugins/org.eclipse.cdt.autotools.ui_2.1.400.202205060838.jar
+# plugins/org.eclipse.cdt.build.crossgcc_1.2.400.202204200013.jar
+# plugins/org.eclipse.cdt.build.gcc.core_1.1.100.202204200013.jar
+# plugins/org.eclipse.cdt.build.gcc.ui_1.1.300.202204200013.jar
+plugins/org.eclipse.cdt.cmake.core_1.4.400.202204200013.jar
+plugins/org.eclipse.cdt.cmake.ui_1.3.500.202204200013.jar
+# plugins/org.eclipse.cdt.codan.checkers.ui_3.3.100.202204200013.jar
+# plugins/org.eclipse.cdt.codan.checkers_3.4.200.202206031330.jar
+# plugins/org.eclipse.cdt.codan.core.cxx_3.5.200.202204200013.jar
+# plugins/org.eclipse.cdt.codan.core_4.1.200.202204200013.jar
+# plugins/org.eclipse.cdt.codan.ui.cxx_3.6.100.202204261256.jar
+# plugins/org.eclipse.cdt.codan.ui_3.4.200.202205060838.jar
+# plugins/org.eclipse.cdt.core.native_6.2.200.202204200013.jar
+# plugins/org.eclipse.cdt.core.win32.x86_64_6.0.600.202206081808
+# plugins/org.eclipse.cdt.core.win32_6.0.300.202204200013.jar
+# plugins/org.eclipse.cdt.core_7.4.200.202205302218.jar
+plugins/org.eclipse.cdt.debug.application.doc_1.1.1200.202204131742.jar
+# plugins/org.eclipse.cdt.debug.application_1.2.700.202204200013
+# plugins/org.eclipse.cdt.debug.core.memory_0.1.300.202204200013.jar
+# plugins/org.eclipse.cdt.debug.core_8.7.200.202204200013.jar
+# plugins/org.eclipse.cdt.debug.gdbjtag.core_10.6.0.202204241640.jar
+# plugins/org.eclipse.cdt.debug.gdbjtag.ui_9.0.300.202204241640.jar
+# plugins/org.eclipse.cdt.debug.gdbjtag_7.0.800.202204131742.jar
+# plugins/org.eclipse.cdt.debug.ui.memory.floatingpoint_1.1.200.202204200013.jar
+# plugins/org.eclipse.cdt.debug.ui.memory.memorybrowser_1.4.500.202204200013.jar
+# plugins/org.eclipse.cdt.debug.ui.memory.search_1.4.100.202204200013.jar
+# plugins/org.eclipse.cdt.debug.ui.memory.traditional_1.6.300.202204200013.jar
+# plugins/org.eclipse.cdt.debug.ui.memory.transport_2.2.200.202204200013.jar
+# plugins/org.eclipse.cdt.debug.ui_8.4.500.202204252159.jar
+plugins/org.eclipse.cdt.doc.user_5.4.1200.202204131742.jar
+plugins/org.eclipse.cdt.docker.launcher_1.3.400.202205210108.jar
+# plugins/org.eclipse.cdt.dsf.gdb.ui_2.7.500.202205060838.jar
+# plugins/org.eclipse.cdt.dsf.gdb_6.6.0.202205110149.jar
+# plugins/org.eclipse.cdt.dsf.ui_2.6.500.202205071814.jar
+# plugins/org.eclipse.cdt.dsf_2.11.200.202204200013.jar
+plugins/org.eclipse.cdt.flatpak.launcher_1.0.400.202204200013.jar
+# plugins/org.eclipse.cdt.gdb.ui_7.1.100.202204200013.jar
+# plugins/org.eclipse.cdt.gdb_7.1.300.202204200013.jar
+# plugins/org.eclipse.cdt.jsoncdb.core.doc_1.0.200.202204131742.jar
+# plugins/org.eclipse.cdt.jsoncdb.core.ui_1.0.200.202204200013.jar
+# plugins/org.eclipse.cdt.jsoncdb.core_1.3.0.202206081803.jar
+# plugins/org.eclipse.cdt.launch.remote_2.6.300.202205060838.jar
+# plugins/org.eclipse.cdt.launch.serial.core_1.1.100.202204200013.jar
+# plugins/org.eclipse.cdt.launch.serial.ui_1.1.300.202204200013.jar
+# plugins/org.eclipse.cdt.launch_10.3.300.202204200013.jar
+# plugins/org.eclipse.cdt.make.core_7.5.300.202204200013.jar
+# plugins/org.eclipse.cdt.make.ui_8.1.200.202205060838.jar
+# plugins/org.eclipse.cdt.managedbuilder.core_9.4.0.202205311434.jar
+# plugins/org.eclipse.cdt.managedbuilder.gnu.ui_8.4.300.202205051013.jar
+# plugins/org.eclipse.cdt.managedbuilder.headlessbuilderapp_1.0.200.202204200013.jar
+# plugins/org.eclipse.cdt.managedbuilder.ui_9.3.200.202204200013.jar
+plugins/org.eclipse.cdt.meson.core_1.1.400.202204200013.jar
+plugins/org.eclipse.cdt.meson.docs_1.0.1200.202204131742.jar
+plugins/org.eclipse.cdt.meson.ui.editor_1.1.200.202204200013.jar
+plugins/org.eclipse.cdt.meson.ui_1.1.500.202204200013.jar
+# plugins/org.eclipse.cdt.native.serial_1.2.600.202206081808.jar
+plugins/org.eclipse.cdt.platform.branding_10.7.0.202204131742.jar
+plugins/org.eclipse.cdt.remote.core_1.1.100.202204200013.jar
+plugins/org.eclipse.cdt.testsrunner.boost_7.1.100.202204200013.jar
+plugins/org.eclipse.cdt.testsrunner.gtest_7.1.100.202204200013.jar
+plugins/org.eclipse.cdt.testsrunner.qttest_7.1.100.202204200013.jar
+plugins/org.eclipse.cdt.testsrunner.tap_1.1.100.202204200013.jar
+plugins/org.eclipse.cdt.testsrunner_8.2.400.202204200013.jar
+# plugins/org.eclipse.cdt.ui_7.3.300.202205131407.jar
+# plugins/org.eclipse.cdt_10.7.0.202204131742.jar
+# plugins/org.eclipse.compare.core_3.7.0.v20220513-0551.jar
+# plugins/org.eclipse.compare.win32_1.2.800.v20200127-1343.jar
+# plugins/org.eclipse.compare_3.8.400.v20220420-1133.jar
+# plugins/org.eclipse.core.commands_3.10.200.v20220512-0851.jar
+# plugins/org.eclipse.core.contenttype_3.8.100.v20210910-0640.jar
+# plugins/org.eclipse.core.databinding.beans_1.8.0.v20210619-1111.jar
+# plugins/org.eclipse.core.databinding.observable_1.12.0.v20211231-1006.jar
+# plugins/org.eclipse.core.databinding.property_1.9.0.v20210619-1129.jar
+# plugins/org.eclipse.core.databinding_1.11.0.v20220118-1028.jar
+# plugins/org.eclipse.core.expressions_3.8.100.v20210910-0640.jar
+# plugins/org.eclipse.core.externaltools_1.2.200.v20220125-2302.jar
+# plugins/org.eclipse.core.filebuffers_3.7.200.v20220202-1008.jar
+# plugins/org.eclipse.core.filesystem.win32.x86_64_1.4.200.v20190812-0909.jar
+# plugins/org.eclipse.core.filesystem_1.9.400.v20220419-0658.jar
+# plugins/org.eclipse.core.jobs_3.13.0.v20220512-1935.jar
+# plugins/org.eclipse.core.net.win32.x86_64_1.1.600.v20220312-1450.jar
+# plugins/org.eclipse.core.net.win32_1.0.0.v20220312-1450.jar
+# plugins/org.eclipse.core.net_1.3.1200.v20220312-1450.jar
+# plugins/org.eclipse.core.resources.win32.x86_64_3.5.400.v20190812-0909.jar
+# plugins/org.eclipse.core.resources_3.17.0.v20220517-0751.jar
+# plugins/org.eclipse.core.runtime_3.25.0.v20220506-1157.jar
+# plugins/org.eclipse.core.variables_3.5.100.v20210721-1355.jar
+# plugins/org.eclipse.debug.core_3.19.100.v20220324-0630.jar
+# plugins/org.eclipse.debug.ui.launchview_1.0.200.v20220308-0315.jar
+# plugins/org.eclipse.debug.ui_3.16.100.v20220526-0826.jar
+# plugins/org.eclipse.e4.core.commands_1.0.100.v20211204-1536.jar
+# plugins/org.eclipse.e4.core.contexts_1.10.0.v20220430-0424.jar
+# plugins/org.eclipse.e4.core.di.annotations_1.7.100.v20210910-0640.jar
+# plugins/org.eclipse.e4.core.di.extensions.supplier_0.16.300.v20220503-2248.jar
+# plugins/org.eclipse.e4.core.di.extensions_0.17.100.v20210910-0640.jar
+# plugins/org.eclipse.e4.core.di_1.8.200.v20220512-1957.jar
+# plugins/org.eclipse.e4.core.services_2.3.200.v20220513-1235.jar
+# plugins/org.eclipse.e4.emf.xpath_0.3.0.v20210722-1426.jar
+# plugins/org.eclipse.e4.ui.bindings_0.13.100.v20210722-1426.jar
+# plugins/org.eclipse.e4.ui.css.core_0.13.200.v20211022-1402.jar
+# plugins/org.eclipse.e4.ui.css.swt.theme_0.13.100.v20220310-1056.jar
+# plugins/org.eclipse.e4.ui.css.swt_0.14.500.v20220511-1639.jar
+# plugins/org.eclipse.e4.ui.dialogs_1.3.200.v20211210-1500.jar
+# plugins/org.eclipse.e4.ui.di_1.4.0.v20210621-1133.jar
+# plugins/org.eclipse.e4.ui.ide_3.16.100.v20220310-1350.jar
+# plugins/org.eclipse.e4.ui.model.workbench_2.2.100.v20220331-0744.jar
+# plugins/org.eclipse.e4.ui.services_1.5.0.v20210115-1333.jar
+# plugins/org.eclipse.e4.ui.swt.win32_1.1.0.v20201119-1132.jar
+# plugins/org.eclipse.e4.ui.widgets_1.3.0.v20210621-1136.jar
+# plugins/org.eclipse.e4.ui.workbench.addons.swt_1.4.400.v20211102-0453.jar
+# plugins/org.eclipse.e4.ui.workbench.renderers.swt_0.15.500.v20220511-1638.jar
+# plugins/org.eclipse.e4.ui.workbench.swt_0.16.500.v20220506-1520.jar
+# plugins/org.eclipse.e4.ui.workbench3_0.16.0.v20210619-0956.jar
+# plugins/org.eclipse.e4.ui.workbench_1.13.100.v20211019-0756.jar
+# plugins/org.eclipse.ecf.filetransfer_5.1.102.v20210409-2301.jar
+# plugins/org.eclipse.ecf.identity_3.9.402.v20210409-2301.jar
+# plugins/org.eclipse.ecf.provider.filetransfer.httpclient5.win32_1.0.400.v20220109-1926.jar
+# plugins/org.eclipse.ecf.provider.filetransfer.httpclient5_1.0.300.v20220215-0126.jar
+# plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.201.v20210409-2301.jar
+# plugins/org.eclipse.ecf.provider.filetransfer_3.2.800.v20220215-0126.jar
+# plugins/org.eclipse.ecf.ssl_1.2.401.v20210409-2301.jar
+# plugins/org.eclipse.ecf_3.10.0.v20210925-0032.jar
+# plugins/org.eclipse.egit.core_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.egit.doc_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.egit.ui_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.egit_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.embedcdt.codered.ui_2.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.codered_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.core_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.core_2.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag.core_5.1.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.jlink.core_5.0.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.jlink.ui_5.1.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.jlink_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag.openocd.core_5.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag.openocd.ui_5.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag.openocd_6.2.1.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.pyocd.core_3.0.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.pyocd.ui_2.1.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.pyocd_6.2.1.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.qemu.core_4.0.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.qemu.ui_4.0.0.202204041943.jar
+plugins/org.eclipse.embedcdt.debug.gdbjtag.qemu_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag.restart.ui_2.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag.ui_5.1.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.gdbjtag_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.debug.packs_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.doc.user_2.0.0.202204041943.jar
+
+# plugins/org.eclipse.embedcdt.managedbuild.cross.arm.core_3.1.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.cross.arm.ui_3.1.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.cross.arm_6.2.1.202204041943.jar
+
+# plugins/org.eclipse.embedcdt.managedbuild.cross.core_2.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.cross.riscv.core_3.1.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.cross.riscv.ui_3.1.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.cross.riscv_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.cross.ui_2.0.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.managedbuild.packs.ui_2.1.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.packs.core_3.1.0.202204041943.jar
+# plugins/org.eclipse.embedcdt.packs.ui_2.0.1.202204041943.jar
+plugins/org.eclipse.embedcdt.packs_6.2.1.202204041943.jar
+plugins/org.eclipse.embedcdt.templates.ad.ui_2.0.0.202204041943
+plugins/org.eclipse.embedcdt.templates.ad_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.templates.core_3.0.0.202204041943
+plugins/org.eclipse.embedcdt.templates.cortexm.ui_2.0.0.202204041943
+plugins/org.eclipse.embedcdt.templates.cortexm_6.2.1.202204041943.jar
+plugins/org.eclipse.embedcdt.templates.freescale.pe.ui_2.0.0.202204041943.jar
+plugins/org.eclipse.embedcdt.templates.freescale.ui_3.0.0.202204041943
+plugins/org.eclipse.embedcdt.templates.freescale_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt.templates.sifive.ui_2.0.0.202204041943
+plugins/org.eclipse.embedcdt.templates.sifive_6.2.1.202204041943.jar
+plugins/org.eclipse.embedcdt.templates.stm.ui_3.0.1.202204041943
+plugins/org.eclipse.embedcdt.templates.stm_6.2.1.202204041943
+# plugins/org.eclipse.embedcdt.ui_6.2.1.202204041943.jar
+# plugins/org.eclipse.embedcdt_6.2.1.202204041943.jar
+# plugins/org.eclipse.emf.common.ui_2.20.0.v20220226-1304.jar
+# plugins/org.eclipse.emf.common_2.25.0.v20220325-0806.jar
+# plugins/org.eclipse.emf.ecore.change_2.14.0.v20190528-0725.jar
+# plugins/org.eclipse.emf.ecore.xmi_2.16.0.v20190528-0725.jar
+# plugins/org.eclipse.emf.ecore_2.27.0.v20220426-0617.jar
+# plugins/org.eclipse.emf.edit.ui_2.21.0.v20220226-1304.jar
+# plugins/org.eclipse.emf.edit_2.17.0.v20220201-1551.jar
+# plugins/org.eclipse.epp.mpc.core.win32_1.10.0.v20220502-0731.jar
+# plugins/org.eclipse.epp.mpc.core_1.10.0.v20220502-0731.jar
+# plugins/org.eclipse.epp.mpc.help.ui_1.10.0.v20220502-0731.jar
+# plugins/org.eclipse.epp.mpc.ui.css_1.10.0.v20220502-0731.jar
+# plugins/org.eclipse.epp.mpc.ui_1.10.0.v20220502-0731.jar
+# plugins/org.eclipse.epp.package.common_4.24.0.20220609-1200
+# plugins/org.eclipse.epp.package.embedcpp_4.24.0.20220609-1200
+# plugins/org.eclipse.equinox.app_1.6.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.bidi_1.4.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.common_3.16.100.v20220315-2327.jar
+# plugins/org.eclipse.equinox.concurrent_1.2.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.console_1.4.500.v20211021-1418.jar
+# plugins/org.eclipse.equinox.event_1.6.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.frameworkadmin.equinox_1.2.200.v20220315-2155.jar
+# plugins/org.eclipse.equinox.frameworkadmin_2.2.0.v20210315-2042.jar
+# plugins/org.eclipse.equinox.http.jetty_3.8.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.http.registry_1.3.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.http.servlet_1.7.200.v20211021-1418.jar
+# plugins/org.eclipse.equinox.jsp.jasper.registry_1.2.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.jsp.jasper_1.1.600.v20211021-1418.jar
+# plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.2.500.v20220509-0833
+# plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar
+# plugins/org.eclipse.equinox.p2.artifact.repository_1.4.500.v20220420-1427.jar
+# plugins/org.eclipse.equinox.p2.console_1.2.0.v20210315-2042.jar
+# plugins/org.eclipse.equinox.p2.core_2.9.100.v20220310-1733.jar
+# plugins/org.eclipse.equinox.p2.director.app_1.2.100.v20211220-1825.jar
+# plugins/org.eclipse.equinox.p2.directorywatcher_1.3.0.v20210316-1209.jar
+# plugins/org.eclipse.equinox.p2.director_2.5.300.v20220421-0708.jar
+# plugins/org.eclipse.equinox.p2.discovery.compatibility_1.2.200.v20220210-1157.jar
+# plugins/org.eclipse.equinox.p2.discovery_1.2.0.v20210315-2042.jar
+# plugins/org.eclipse.equinox.p2.engine_2.7.400.v20220329-1456.jar
+# plugins/org.eclipse.equinox.p2.extensionlocation_1.4.100.v20220213-0541.jar
+# plugins/org.eclipse.equinox.p2.garbagecollector_1.2.0.v20210316-1209.jar
+# plugins/org.eclipse.equinox.p2.jarprocessor_1.2.300.v20220420-1427.jar
+# plugins/org.eclipse.equinox.p2.metadata.repository_1.4.100.v20220329-1456.jar
+# plugins/org.eclipse.equinox.p2.metadata_2.6.200.v20220324-1313.jar
+# plugins/org.eclipse.equinox.p2.operations_2.6.0.v20210315-2228.jar
+# plugins/org.eclipse.equinox.p2.publisher.eclipse_1.4.100.v20220420-1427.jar
+# plugins/org.eclipse.equinox.p2.publisher_1.7.100.v20220420-1427.jar
+# plugins/org.eclipse.equinox.p2.reconciler.dropins_1.4.100.v20211217-1131.jar
+# plugins/org.eclipse.equinox.p2.repository.tools_2.3.100.v20220504-1755.jar
+# plugins/org.eclipse.equinox.p2.repository_2.6.100.v20220422-1806.jar
+# plugins/org.eclipse.equinox.p2.touchpoint.eclipse_2.3.200.v20220503-2330.jar
+# plugins/org.eclipse.equinox.p2.touchpoint.natives_1.4.400.v20220506-1821.jar
+# plugins/org.eclipse.equinox.p2.transport.ecf_1.3.300.v20220512-1321.jar
+# plugins/org.eclipse.equinox.p2.ui.discovery_1.2.300.v20210813-0655.jar
+# plugins/org.eclipse.equinox.p2.ui.importexport_1.3.300.v20220329-1456.jar
+# plugins/org.eclipse.equinox.p2.ui.sdk.scheduler_1.5.300.v20211214-1242.jar
+# plugins/org.eclipse.equinox.p2.ui.sdk_1.2.4.v20220213-1624.jar
+# plugins/org.eclipse.equinox.p2.ui_2.7.500.v20220423-1604.jar
+plugins/org.eclipse.equinox.p2.updatechecker_1.3.0.v20210315-2228.jar
+plugins/org.eclipse.equinox.p2.updatesite_1.2.300.v20220420-1427.jar
+# plugins/org.eclipse.equinox.preferences_3.10.0.v20220503-1634.jar
+# plugins/org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar
+# plugins/org.eclipse.equinox.security.ui_1.3.200.v20220115-0654.jar
+# plugins/org.eclipse.equinox.security.win32.x86_64_1.1.300.v20211021-1418.jar
+# plugins/org.eclipse.equinox.security_1.3.900.v20220108-1321.jar
+# plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.2.0.v20210315-2228.jar
+# plugins/org.eclipse.equinox.simpleconfigurator_1.4.0.v20210315-2228.jar
+# plugins/org.eclipse.help.base_4.3.700.v20220607-0700.jar
+# plugins/org.eclipse.help.ui_4.4.0.v20220411-0938.jar
+plugins/org.eclipse.help.webapp_3.10.700.v20220510-1941.jar
+# plugins/org.eclipse.help_3.9.100.v20210721-0601.jar
+# plugins/org.eclipse.jetty.http_10.0.9.jar
+# plugins/org.eclipse.jetty.io_10.0.9.jar
+# plugins/org.eclipse.jetty.security_10.0.9.jar
+# plugins/org.eclipse.jetty.server_10.0.9.jar
+# plugins/org.eclipse.jetty.servlet_10.0.9.jar
+# plugins/org.eclipse.jetty.util.ajax_10.0.9.jar
+# plugins/org.eclipse.jetty.util_10.0.9.jar
+# plugins/org.eclipse.jface.databinding_1.13.0.v20210619-1146.jar
+# plugins/org.eclipse.jface.notifications_0.5.0.v20220401-0716.jar
+# plugins/org.eclipse.jface.text_3.20.100.v20220516-0819.jar
+# plugins/org.eclipse.jface_3.26.0.v20220513-0449.jar
+# plugins/org.eclipse.jgit.archive_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.jgit.gpg.bc_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.jgit.http.apache_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.jgit.ssh.apache.agent_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.jgit.ssh.apache_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.jgit_6.2.0.202206071550-r.jar
+# plugins/org.eclipse.jsch.core_1.3.900.v20200422-1935.jar
+# plugins/org.eclipse.jsch.ui_1.4.100.v20210917-1201.jar
+# plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416
+# plugins/org.eclipse.justj.openjdk.hotspot.jre.full_17.0.3.v20220515-1416.jar
+# plugins/org.eclipse.launchbar.core_2.4.300.202204200013.jar
+plugins/org.eclipse.launchbar.remote.core_1.1.100.202204200013.jar
+plugins/org.eclipse.launchbar.remote.ui_1.1.300.202204200013.jar
+# plugins/org.eclipse.launchbar.ui.controls_1.1.200.202204200013.jar
+# plugins/org.eclipse.launchbar.ui_2.4.500.202204200013.jar
+# plugins/org.eclipse.linuxtools.binutils_6.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.cdt.libhover.devhelp_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.cdt.libhover.glibc_1.2.1.202206072042.jar
+plugins/org.eclipse.linuxtools.cdt.libhover.library.docs_1.0.2.202206072042.jar
+plugins/org.eclipse.linuxtools.cdt.libhover_1.2.0.202206072042.jar
+plugins/org.eclipse.linuxtools.changelog.core_3.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.changelog.cparser_2.7.0.202206072042.jar
+plugins/org.eclipse.linuxtools.changelog.doc_2.7.1.202206072042.jar
+plugins/org.eclipse.linuxtools.dataviewers.charts_7.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.dataviewers.piechart_3.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.dataviewers_6.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.docker.core_5.7.0.202206072042.jar
+plugins/org.eclipse.linuxtools.docker.docs_5.7.0.202206072042.jar
+plugins/org.eclipse.linuxtools.docker.editor.ls_1.0.1.202206072042
+plugins/org.eclipse.linuxtools.docker.ui_5.7.0.202206072042.jar
+plugins/org.eclipse.linuxtools.gcov.core_6.2.0.202206072042.jar
+plugins/org.eclipse.linuxtools.gcov.docs_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.gcov.launch_1.2.0.202206072042.jar
+plugins/org.eclipse.linuxtools.gprof.docs_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.gprof.launch_1.2.0.202206072042.jar
+plugins/org.eclipse.linuxtools.gprof_5.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.profiling.docs_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.profiling.launch_3.3.0.202206072042.jar
+plugins/org.eclipse.linuxtools.profiling.ui.capability_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.profiling.ui_3.2.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpm.core_3.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpm.createrepo_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpm.rpmlint_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpm.ui.editor.doc_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpm.ui.editor_4.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpm.ui_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.rpmstubby_1.2.0.202206072042.jar
+plugins/org.eclipse.linuxtools.tools.launch.core_3.3.0.202206072042.jar
+plugins/org.eclipse.linuxtools.tools.launch.ui_2.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.cachegrind_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.core_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.doc_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.helgrind_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.launch_3.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.massif_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.memcheck_1.1.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.ui.editor_1.0.0.202206072042.jar
+plugins/org.eclipse.linuxtools.valgrind.ui_2.1.0.202206072042.jar
+# plugins/org.eclipse.lsp4e_0.13.12.202206011407.jar
+# plugins/org.eclipse.lsp4j.jsonrpc_0.14.0.v20220526-1518.jar
+# plugins/org.eclipse.lsp4j_0.14.0.v20220526-1518.jar
+# plugins/org.eclipse.ltk.core.refactoring_3.12.200.v20220502-1514.jar
+# plugins/org.eclipse.ltk.ui.refactoring_3.12.100.v20220329-1353.jar
+plugins/org.eclipse.mylyn.wikitext.ant_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.asciidoc.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.asciidoc_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.confluence.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.confluence_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.help.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.html_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.markdown.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.markdown_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.mediawiki.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.mediawiki_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.osgi_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.textile.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.textile_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.tracwiki.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.tracwiki_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.twiki.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext.twiki_3.0.42.20220107230029.jar
+plugins/org.eclipse.mylyn.wikitext.ui_3.0.42.202201072301.jar
+plugins/org.eclipse.mylyn.wikitext_3.0.42.20220107230029.jar
+# plugins/org.eclipse.nebula.widgets.tablecombo_1.2.0.202205212116.jar
+plugins/org.eclipse.oomph.base.edit_1.15.0.v20220601-1043.jar
+plugins/org.eclipse.oomph.base_1.16.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.extractor.lib_1.9.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.jreinfo.ui_1.15.0.v20220520-1242.jar
+plugins/org.eclipse.oomph.jreinfo.win32.x86_64_1.8.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.jreinfo_1.17.0.v20220520-1242.jar
+plugins/org.eclipse.oomph.p2.core_1.22.0.v20220525-1027.jar
+plugins/org.eclipse.oomph.p2.doc_1.13.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.p2.edit_1.16.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.p2.ui_1.18.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.p2_1.16.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.predicates.edit_1.12.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.predicates_1.14.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.preferences_1.13.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.resources.edit_1.12.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.resources_1.16.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.setup.core_1.24.0.v20220601-1043.jar
+plugins/org.eclipse.oomph.setup.doc_1.13.0.v20220520-0625.jar
+plugins/org.eclipse.oomph.setup.editor_1.22.0.v20220601-1043.jar
+plugins/org.eclipse.oomph.setup.edit_1.16.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.setup.p2.edit_1.14.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.setup.p2_1.19.0.v20220607-1104.jar
+plugins/org.eclipse.oomph.setup.sync_1.14.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.setup.ui.questionnaire_1.13.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.setup.ui_1.24.0.v20220601-1043.jar
+plugins/org.eclipse.oomph.setup_1.24.0.v20220525-1027.jar
+plugins/org.eclipse.oomph.ui_1.17.0.v20220601-1043.jar
+plugins/org.eclipse.oomph.util_1.19.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.workingsets.editor_1.13.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.workingsets.edit_1.12.0.v20220421-1218.jar
+plugins/org.eclipse.oomph.workingsets_1.12.0.v20220421-1218.jar
+# plugins/org.eclipse.osgi.compatibility.state_1.2.600.v20220207-1403.jar
+# plugins/org.eclipse.osgi.services_3.10.200.v20210723-0643.jar
+# plugins/org.eclipse.osgi.util_3.7.0.v20220427-2144.jar
+# plugins/org.eclipse.osgi_3.18.0.v20220516-2155.jar
+plugins/org.eclipse.platform.doc.user_4.24.0.v20220530-1438.jar
+# plugins/org.eclipse.platform_4.24.0.v20220607-0700
+# plugins/org.eclipse.rcp_4.24.0.v20220607-0700.jar
+plugins/org.eclipse.remote.console_1.3.100.202204200013.jar
+plugins/org.eclipse.remote.core_4.1.100.202204200013.jar
+plugins/org.eclipse.remote.doc.isv_1.1.200.202204131742.jar
+plugins/org.eclipse.remote.jsch.core_1.1.100.202204200013.jar
+plugins/org.eclipse.remote.jsch.ui_1.1.100.202204200013.jar
+plugins/org.eclipse.remote.serial.core_1.1.100.202204200013.jar
+plugins/org.eclipse.remote.serial.ui_1.0.200.202204200013.jar
+plugins/org.eclipse.remote.telnet.core_1.1.100.202204200013.jar
+plugins/org.eclipse.remote.telnet.ui_1.0.200.202204200013.jar
+plugins/org.eclipse.remote.ui_2.2.100.202204200013.jar
+# plugins/org.eclipse.search_3.14.100.v20220120-1549.jar
+# plugins/org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar
+plugins/org.eclipse.swtchart.extensions_0.13.0.202109100616.jar
+plugins/org.eclipse.swtchart_0.13.0.202109100616.jar
+# plugins/org.eclipse.swt_3.120.0.v20220530-1036.jar
+# plugins/org.eclipse.team.core_3.9.400.v20220511-1440.jar
+# plugins/org.eclipse.team.genericeditor.diff.extension_1.1.0.v20210426-0951.jar
+# plugins/org.eclipse.team.ui_3.9.300.v20220420-1133.jar
+# plugins/org.eclipse.text.quicksearch_1.1.300.v20211203-1705.jar
+# plugins/org.eclipse.text_3.12.100.v20220506-1404.jar
+# plugins/org.eclipse.tm.terminal.connector.cdtserial_4.7.200.202204200013.jar
+# plugins/org.eclipse.tm.terminal.connector.local_4.7.300.202204200013.jar
+# plugins/org.eclipse.tm.terminal.connector.process_4.8.100.202204200013.jar
+plugins/org.eclipse.tm.terminal.connector.ssh_4.7.300.202204200013.jar
+plugins/org.eclipse.tm.terminal.connector.telnet_4.7.200.202204200013.jar
+# plugins/org.eclipse.tm.terminal.control_5.3.200.202204200013.jar
+# plugins/org.eclipse.tm.terminal.view.core_4.8.300.202204200013.jar
+# plugins/org.eclipse.tm.terminal.view.ui_4.10.300.202204200013.jar
+plugins/org.eclipse.tm4e.core_0.4.4.202205101731.jar
+plugins/org.eclipse.tm4e.registry_0.5.1.202205101731.jar
+plugins/org.eclipse.tm4e.ui_0.5.1.202205101731.jar
+# plugins/org.eclipse.tools.templates.core_1.2.100.202204200013.jar
+# plugins/org.eclipse.tools.templates.freemarker_1.2.300.202204200013.jar
+# plugins/org.eclipse.tools.templates.ui_1.3.100.202204200013.jar
+# plugins/org.eclipse.tracecompass.analysis.counters.core_2.0.6.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.counters.ui_2.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.graph.core_3.1.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.graph.ui_1.0.12.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.lami.core_1.1.4.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.lami.ui_1.1.5.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.os.linux.core_6.0.3.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.os.linux.ui_4.0.5.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.profiling.core_2.3.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.profiling.ui_3.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.timing.core_5.2.4.202206082347.jar
+# plugins/org.eclipse.tracecompass.analysis.timing.ui_6.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.common.core_5.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.ctf.core_4.1.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.ctf.parser_1.0.6.202206082347.jar
+# plugins/org.eclipse.tracecompass.datastore.core_1.2.2.202206082347.jar
+# plugins/org.eclipse.tracecompass.doc.dev_8.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.doc.user_8.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.gdbtrace.core_1.0.7.202206082347.jar
+# plugins/org.eclipse.tracecompass.gdbtrace.doc.user_8.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.gdbtrace.ui_1.1.4.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.common.core_1.1.3.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.control.core_1.2.5.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.control.ui_1.2.13.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.kernel.core_3.0.5.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.kernel.ui_2.0.2.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.ust.core_5.1.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.lttng2.ust.ui_3.0.10.202206082347.jar
+# plugins/org.eclipse.tracecompass.segmentstore.core_3.0.1.202206082347.jar
+# plugins/org.eclipse.tracecompass.statesystem.core_5.1.2.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.analysis.xml.core_4.0.4.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.analysis.xml.ui_2.1.16.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.chart.core_1.0.4.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.chart.ui_1.0.12.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.core_8.0.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.ctf.core_4.4.0.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.filter.parser_1.0.6.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.remote.core_2.0.5.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.remote.ui_1.0.9.202206082347.jar
+# plugins/org.eclipse.tracecompass.tmf.ui_8.0.0.202206082347.jar
+# plugins/org.eclipse.ui.browser_3.7.100.v20211105-1434.jar
+# plugins/org.eclipse.ui.cheatsheets_3.7.300.v20210507-0822.jar
+# plugins/org.eclipse.ui.console_3.11.200.v20220324-0630.jar
+# plugins/org.eclipse.ui.editors_3.14.300.v20210913-0815.jar
+# plugins/org.eclipse.ui.externaltools_3.5.100.v20210812-1118.jar
+# plugins/org.eclipse.ui.forms_3.11.300.v20211022-1451.jar
+# plugins/org.eclipse.ui.genericeditor_1.2.200.v20211217-1247.jar
+# plugins/org.eclipse.ui.ide.application_1.4.400.v20220502-1523.jar
+# plugins/org.eclipse.ui.ide_3.19.0.v20220511-1638.jar
+# plugins/org.eclipse.ui.intro.quicklinks_1.1.100.v20210315-0954.jar
+# plugins/org.eclipse.ui.intro.universal_3.4.200.v20210409-1747.jar
+# plugins/org.eclipse.ui.intro_3.6.500.v20220317-1346.jar
+# plugins/org.eclipse.ui.monitoring_1.2.200.v20220429-1040.jar
+# plugins/org.eclipse.ui.navigator.resources_3.8.400.v20220203-1803.jar
+# plugins/org.eclipse.ui.navigator_3.10.200.v20211009-1706.jar
+# plugins/org.eclipse.ui.net_1.4.0.v20210426-0838.jar
+# plugins/org.eclipse.ui.themes_1.2.1800.v20220316-1102
+# plugins/org.eclipse.ui.views.log_1.3.200.v20220310-1555.jar
+# plugins/org.eclipse.ui.views.properties.tabbed_3.9.100.v20201223-1348.jar
+# plugins/org.eclipse.ui.views_3.11.100.v20210816-0811.jar
+# plugins/org.eclipse.ui.win32_3.4.400.v20200414-1247.jar
+# plugins/org.eclipse.ui.workbench.texteditor_3.16.500.v20220331-0848.jar
+# plugins/org.eclipse.ui.workbench_3.125.100.v20220524-1304.jar
+# plugins/org.eclipse.ui_3.201.0.v20220124-1108.jar
+# plugins/org.eclipse.update.configurator_3.4.800.v20210415-1314.jar
+# plugins/org.eclipse.urischeme_1.2.100.v20211001-1648.jar
+plugins/org.eclipse.userstorage.oauth_1.1.0.v20190307-0457.jar
+plugins/org.eclipse.userstorage.ui_1.1.0.v20190307-0457.jar
+plugins/org.eclipse.userstorage_1.2.0.v20210517-0327.jar
+# plugins/org.eclipse.wildwebdeveloper.embedder.node_0.2.3.202103081410.jar
+# plugins/org.eclipse.wst.common.core_1.4.100.v202103232321.jar
+# plugins/org.eclipse.wst.common.environment_1.0.401.v202007142017.jar
+# plugins/org.eclipse.wst.common.frameworks.ui_1.2.401.v202007142017.jar
+# plugins/org.eclipse.wst.common.frameworks_1.2.202.v202108200212.jar
+# plugins/org.eclipse.wst.common.project.facet.core_1.4.402.v202111212041.jar
+# plugins/org.eclipse.wst.common.ui_1.2.100.v202101112327.jar
+# plugins/org.eclipse.wst.common.uriresolver_1.3.0.v202007161535.jar
+# plugins/org.eclipse.wst.sse.core_1.2.700.v202112071542.jar
+# plugins/org.eclipse.wst.sse.ui_1.7.400.v202204091445.jar
+# plugins/org.eclipse.wst.validation.ui_1.2.601.v202007142017.jar
+# plugins/org.eclipse.wst.validation_1.2.801.v202007142017.jar
+# plugins/org.eclipse.wst.xml.core_1.2.500.v202201311924.jar
+# plugins/org.eclipse.wst.xml.ui_1.2.600.v202102222242.jar
+# plugins/org.eclipse.wst.xsd.core_1.2.100.v202008180353.jar
+# plugins/org.eclipse.xsd_2.18.0.v20220312-1031.jar
+# plugins/org.eclipse.xtext.xbase.lib_2.27.0.v20220530-0353.jar
+# plugins/org.freemarker_2.3.22.v20160210-1233.jar
+# plugins/org.glassfish.hk2.api_2.6.1.v20200513-1859.jar
+# plugins/org.glassfish.hk2.locator_2.6.1.v20200513-1859.jar
+# plugins/org.glassfish.hk2.osgi-resource-locator_1.0.3.v20200509-0149.jar
+# plugins/org.glassfish.hk2.utils_2.6.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.apache.connector_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.containers.servlet.core_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.containers.servlet_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.core.jersey-client_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.core.jersey-common_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.core.jersey-server_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.ext.entityfiltering_2.30.1.v20200513-1859.jar
+# plugins/org.glassfish.jersey.inject.jersey-hk2_2.30.1.v20200512-1802.jar
+# plugins/org.glassfish.jersey.media.jersey-media-json-jackson_2.30.1.v20200513-1859.jar
+# plugins/org.jcodings_1.0.57.jar
+# plugins/org.joni_2.1.43.jar
+# plugins/org.json_1.0.0.v201011060100.jar
+# plugins/org.jsoup_1.14.3.v20211012-1727.jar
+plugins/org.mandas.docker-client_3.2.1.v20200519-1937.jar
+# plugins/org.objectweb.asm.analysis_9.3.0.v20220409-0157.jar
+# plugins/org.objectweb.asm.tree_9.3.0.v20220409-0157.jar
+# plugins/org.objectweb.asm.util_9.3.0.v20220409-0157.jar
+# plugins/org.objectweb.asm_9.3.0.v20220409-0157.jar
+# plugins/org.osgi.service.prefs_1.1.2.202109301733.jar
+# plugins/org.osgi.util.function_1.2.0.202109301733.jar
+# plugins/org.osgi.util.measurement_1.0.2.201802012109.jar
+# plugins/org.osgi.util.position_1.0.1.201505202026.jar
+# plugins/org.osgi.util.promise_1.2.0.202109301733.jar
+# plugins/org.osgi.util.xml_1.0.2.202109301733.jar
+# plugins/org.sat4j.core_2.3.6.v20201214.jar
+# plugins/org.sat4j.pb_2.3.6.v20201214.jar
+# plugins/org.slf4j.api_1.7.30.v20200204-2150.jar
+# plugins/org.tukaani.xz_1.9.0.v20210624-1259.jar
+# plugins/org.w3c.css.sac_1.3.1.v200903091627.jar
+# plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar
+# plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar
+# plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar
+# plugins/org.yaml.snakeyaml_1.27.0.v20201111-1638.jar
+# readme/readme_eclipse.html
