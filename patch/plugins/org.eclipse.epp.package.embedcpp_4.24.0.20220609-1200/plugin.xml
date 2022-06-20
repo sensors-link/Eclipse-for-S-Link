@@ -7,7 +7,7 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Eclipse for S-Link">
+            name="Eclipse for S-Link (v1.0.2)">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
