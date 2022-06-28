@@ -1,27 +1,30 @@
-name: 'Build Eclipse_for_S_Link'
+name: '构建测试版'
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: Bump Version
-        default: v1.0.2
+        description: 版本号
+        default: snapshot
         required: true
+
 jobs:
   build-eclipse:
     runs-on: ubuntu-latest
     steps:
       - name: Prepare 
         run: |
-          pwd
+          sudo apt install -y fastjar
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Build Package
         run: |          
-          make USE_MIRROR=no V=${{ github.event.inputs.version }}
+          make generate V=${{ github.event.inputs.version }}
+          mkdir -p artifacts
+          mv output/Eclipse_for_S_Link artifacts/
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: Eclipse_for_S_Link
+          name: Eclipse_for_S_Link_${{ github.event.inputs.version }}
           path: |
-            output/Eclipse_for_S_Link*.zip
+            artifacts/
           if-no-files-found: error
