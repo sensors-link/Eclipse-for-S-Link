@@ -95,7 +95,7 @@ $(OUTPUT)/BUILDTOOLS.dir.stamp : $(BUILDTOOLS_TAR) $(OUTPUT)/WORKDIR.dir.stamp
 $(OUTPUT)/TOOLCHAIN.dir.stamp : $(TOOLCHAIN_TAR) $(OUTPUT)/WORKDIR.dir.stamp
 	unzip $< -d $(EMBEDCPP_DIR)/toolchain
 	mv "$(EMBEDCPP_DIR)/toolchain/xPack/RISC-V Embedded GCC/8.2.0-3.1" $(TOOLCHAIN_DIR)
-	rm -fr "$(EMBEDCPP_DIR)/toolchain/xPack/RISC-V Embedded GCC"
+	rm -fr "$(EMBEDCPP_DIR)/toolchain/xPack"
 	touch $@
 
 $(OUTPUT)/SDK.dir.stamp : $(PHNX_SDK_TAR)
@@ -156,11 +156,11 @@ $(OUTPUT)/shrink-gcc.stamp : extract
 	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32e/ilp32e/*c++*
 	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32emac/ilp32e/*c++*
 	rm -fr $(TOOLCHAIN_DIR)/lib/libstdc++*
-	perl -i -pe "s|replace-outfile\(-lrdimon.*$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
+	perl -i -pe "s|replace-outfile\(-lrdimon.*$$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
 		$(TOOLCHAIN_DIR)/riscv-none-embed/lib/nano.specs
-	perl -i -pe "s|replace-outfile\(-lrdimon.*$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
+	perl -i -pe "s|replace-outfile\(-lrdimon.*$$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
 		$(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32e/ilp32e/nano.specs
-	perl -i -pe "s|replace-outfile\(-lrdimon.*$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
+	perl -i -pe "s|replace-outfile\(-lrdimon.*$$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
 		$(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32emac/ilp32e/nano.specs
 	# Prepare for platformio toolchain
 	cp -f pio/* $(TOOLCHAIN_DIR)/
