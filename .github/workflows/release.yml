@@ -20,5 +20,7 @@ jobs:
         with:
           name: "Release ${{ github.ref_name }}"
           body: '变更记录:'
-          files: 'output/Eclipse_for_S_Link_${{ github.ref_name }}.zip'
+          files: |
+            'output/Eclipse_for_S_Link_${{ github.ref_name }}.zip'
+            'output/PlatformIO_toolchain_fdv32.zip'
           draft: true

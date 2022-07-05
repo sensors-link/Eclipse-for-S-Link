@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
-toolchain.name=xPack GNU RISC-V Embedded GCC
+toolchain.name=GNU MCU RISC-V GCC
+toolchain.path=${eclipse_home}\\toolchain\\gcc\\bin
 toolchain.path.2021824384=${eclipse_home}\\toolchain\\gcc\\bin
+toolchain.path.512258282=${eclipse_home}\\toolchain\\gcc\\bin

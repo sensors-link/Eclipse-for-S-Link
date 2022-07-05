@@ -1,0 +1,22 @@
+{
+  "name": "toolchain-fdv32",
+  "version": "8.2.0",
+  "description": "GCC Toolchain for S-Link Phoenix SoCs",
+  "keywords": [
+    "build tools",
+    "compiler",
+    "assembler",
+    "linker",
+    "preprocessor",
+    "risc-v"
+  ],
+  "license": "GPL-2.0-or-later",
+  "system": [
+    "windows_x86",
+    "windows_amd64"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sensors-link/Eclipse-for-S-Link"
+  }
+}

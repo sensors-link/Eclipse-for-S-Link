@@ -4,6 +4,7 @@ V := snapshot
 PWD = $(shell pwd)
 OUTPUT = output
 PACKAGE = $(OUTPUT)/Eclipse_for_S_Link_$(V).zip
+PACKAGE_PIO = $(OUTPUT)/PlatformIO_toolchain_fdv32.zip
 
 WGET=wget -q
 
@@ -45,7 +46,7 @@ WGET = wget -q
 
 .PHONY: all dep download extract prepare generate clean dist-clean help
 
-all: $(PACKAGE)
+all: $(PACKAGE) $(PACKAGE_PIO)
 
 dep:
 	sudo apt install -y zip unzip fastjar
@@ -129,19 +130,41 @@ $(OUTPUT)/shrink.stamp : extract
 
 $(OUTPUT)/shrink-gcc.stamp : extract
 	@echo "===== \e[32m 裁剪riscv gcc \e[0m ====="
-	rm -fr $(TOOLCHAIN_DIR)/doc
-	rm -fr $(TOOLCHAIN_DIR)/share/doc
+	rm -fr $(TOOLCHAIN_DIR)/doc $(TOOLCHAIN_DIR)/share $(TOOLCHAIN_DIR)/distro-info $(TOOLCHAIN_DIR)/include
+	rm -fr $(TOOLCHAIN_DIR)/bin/libiconv-2.dll $(TOOLCHAIN_DIR)/bin/python27.dll \
+		$(TOOLCHAIN_DIR)/bin/riscv-none-embed-gcc-8.2.0 $(TOOLCHAIN_DIR)/bin/riscv-none-embed-gdb-py.exe \
+		 $(TOOLCHAIN_DIR)/bin/riscv-none-embed-c++.exe $(TOOLCHAIN_DIR)/bin/riscv-none-embed-ld.bfd.exe \
+		 $(TOOLCHAIN_DIR)/bin/riscv-none-embed-gcov* $(TOOLCHAIN_DIR)/bin/riscv-none-embed-gprof.exe 
+	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/plugin
+	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/*.[oa]
+	# unused libs
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/share
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/*.[oa]
 	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv64*
 	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32i*
-	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32em $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32eac
-	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32e/ilp32e/*c++*
-	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32emac/ilp32e/*c++*
-	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/include/c++
-	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/ldscripts/elf64*
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32em
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32eac
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32e/ilp32e/lib[cg].a
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32emac/ilp32e/lib[cg].a
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/ldscripts
 	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/rv64*
 	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/rv32i*
-	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/rv32em $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/rv32eac
+	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/rv32em
+	rm -fr $(TOOLCHAIN_DIR)/lib/gcc/riscv-none-embed/8.2.0/rv32eac
+	# C++ support
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/include/c++
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32e/ilp32e/*c++*
+	rm -fr $(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32emac/ilp32e/*c++*
 	rm -fr $(TOOLCHAIN_DIR)/lib/libstdc++*
+	perl -i -pe "s|replace-outfile\(-lrdimon.*$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
+		$(TOOLCHAIN_DIR)/riscv-none-embed/lib/nano.specs
+	perl -i -pe "s|replace-outfile\(-lrdimon.*$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
+		$(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32e/ilp32e/nano.specs
+	perl -i -pe "s|replace-outfile\(-lrdimon.*$|remove-outfile\(-lrdimon\) %:remove-outfile\(-lstdc++\) %:remove-outfile\(-lsupc++\)|" \
+		$(TOOLCHAIN_DIR)/riscv-none-embed/lib/rv32emac/ilp32e/nano.specs
+	# Prepare for platformio toolchain
+	cp -f pio/* $(TOOLCHAIN_DIR)/
+	# Done		
 	touch $@
 
 
@@ -167,6 +190,9 @@ generate: extract $(OUTPUT)/shrink.stamp $(OUTPUT)/shrink-gcc.stamp $(OUTPUT)/pa
 
 $(PACKAGE) : generate
 	@cd $(OUTPUT) && zip -9r `basename $(PACKAGE)` `basename $(EMBEDCPP_DIR)`/
+
+$(PACKAGE_PIO) : $(PACKAGE)
+	@cd $(TOOLCHAIN_DIR) && zip -9r ../../../`basename $(PACKAGE_PIO)` .
 
 clean:
 	rm -fr $(EMBEDCPP_DIR)
