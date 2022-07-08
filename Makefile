@@ -131,7 +131,7 @@ $(OUTPUT)/shrink.stamp : extract
 $(OUTPUT)/shrink-gcc.stamp : extract
 	@echo "===== \e[32m 裁剪riscv gcc \e[0m ====="
 	rm -fr $(TOOLCHAIN_DIR)/doc $(TOOLCHAIN_DIR)/share $(TOOLCHAIN_DIR)/distro-info $(TOOLCHAIN_DIR)/include
-	rm -fr $(TOOLCHAIN_DIR)/bin/libiconv-2.dll $(TOOLCHAIN_DIR)/bin/python27.dll \
+	rm -fr $(TOOLCHAIN_DIR)/bin/python27.dll \
 		$(TOOLCHAIN_DIR)/bin/riscv-none-embed-gcc-8.2.0 $(TOOLCHAIN_DIR)/bin/riscv-none-embed-gdb-py.exe \
 		 $(TOOLCHAIN_DIR)/bin/riscv-none-embed-c++.exe $(TOOLCHAIN_DIR)/bin/riscv-none-embed-ld.bfd.exe \
 		 $(TOOLCHAIN_DIR)/bin/riscv-none-embed-gcov* $(TOOLCHAIN_DIR)/bin/riscv-none-embed-gprof.exe 
