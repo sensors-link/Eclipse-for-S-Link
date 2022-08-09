@@ -84,13 +84,13 @@ features/org.eclipse.oomph.setup_1.25.0.v20220607-1104
 # features/org.eclipse.platform_4.24.0.v20220607-0700
 # features/org.eclipse.rcp_4.24.0.v20220607-0700
 features/org.eclipse.remote_10.7.0.202204200013
-features/org.eclipse.tm.terminal.connector.cdtserial.feature_10.7.0.202204200013
-features/org.eclipse.tm.terminal.connector.local.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.connector.cdtserial.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.connector.local.feature_10.7.0.202204200013
 features/org.eclipse.tm.terminal.connector.ssh.feature_10.7.0.202204200013
 features/org.eclipse.tm.terminal.connector.telnet.feature_10.7.0.202204200013
-features/org.eclipse.tm.terminal.control.feature_10.7.0.202204200013
-features/org.eclipse.tm.terminal.feature_10.7.0.202204110055
-features/org.eclipse.tm.terminal.view.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.control.feature_10.7.0.202204200013
+# features/org.eclipse.tm.terminal.feature_10.7.0.202204110055
+# features/org.eclipse.tm.terminal.view.feature_10.7.0.202204200013
 features/org.eclipse.tracecompass.ctf_8.0.0.202206082347
 features/org.eclipse.tracecompass.gdbtrace_8.0.0.202206082347
 features/org.eclipse.tracecompass.lttng2.control_8.0.0.202206082347
@@ -584,14 +584,14 @@ plugins/org.eclipse.swtchart_0.13.0.202109100616.jar
 # plugins/org.eclipse.team.ui_3.9.300.v20220420-1133.jar
 # plugins/org.eclipse.text.quicksearch_1.1.300.v20211203-1705.jar
 # plugins/org.eclipse.text_3.12.100.v20220506-1404.jar
-plugins/org.eclipse.tm.terminal.connector.cdtserial_4.7.200.202204200013.jar
-plugins/org.eclipse.tm.terminal.connector.local_4.7.300.202204200013.jar
-plugins/org.eclipse.tm.terminal.connector.process_4.8.100.202204200013.jar
+# plugins/org.eclipse.tm.terminal.connector.cdtserial_4.7.200.202204200013.jar
+# plugins/org.eclipse.tm.terminal.connector.local_4.7.300.202204200013.jar
+# plugins/org.eclipse.tm.terminal.connector.process_4.8.100.202204200013.jar
 plugins/org.eclipse.tm.terminal.connector.ssh_4.7.300.202204200013.jar
 plugins/org.eclipse.tm.terminal.connector.telnet_4.7.200.202204200013.jar
-plugins/org.eclipse.tm.terminal.control_5.3.200.202204200013.jar
-plugins/org.eclipse.tm.terminal.view.core_4.8.300.202204200013.jar
-plugins/org.eclipse.tm.terminal.view.ui_4.10.300.202204200013.jar
+# plugins/org.eclipse.tm.terminal.control_5.3.200.202204200013.jar
+# plugins/org.eclipse.tm.terminal.view.core_4.8.300.202204200013.jar
+# plugins/org.eclipse.tm.terminal.view.ui_4.10.300.202204200013.jar
 plugins/org.eclipse.tm4e.core_0.4.4.202205101731.jar
 plugins/org.eclipse.tm4e.registry_0.5.1.202205101731.jar
 plugins/org.eclipse.tm4e.ui_0.5.1.202205101731.jar
